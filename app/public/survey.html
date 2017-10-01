@@ -166,14 +166,15 @@
 </body>
 
 <script type="text/javascript">
-    $("#submit").on("click", function () {
+    $("#submit").on("click", function () { //submit button handler
 
+        //if all questions answered
         if ($("#q1 option:selected").val() != "-" && $("#q2 option:selected").val() != "-" && $("#q3 option:selected").val() != "-" &&
             $("#q4 option:selected").val() != "-" && $("#q5 option:selected").val() != "-" && $("#q6 option:selected").val() != "-" &&
             $("#q7 option:selected").val() != "-" && $("#q8 option:selected").val() != "-" && $("#q9 option:selected").val() != "-" &&
             $("#q10 option:selected").val() != "-" && $("#link").val() != "" && $("#nameInput").val() != "") {
             $("#warning").html("");
-            var friend = {
+            var friend = { //create friend object
                 name: $("#nameInput").val(),
                 photo: $("#link").val(),
                 scores: [$("#q1 option:selected").val(),
@@ -187,21 +188,21 @@
                 $("#q9 option:selected").val(),
                 $("#q10 option:selected").val()]
             }
-            $.post("/api/friends", friend, function (data) {
-                if (data) {
+            $.post("/api/friends", friend, function (data) { //post friend object to friends.js
+                if (data) { //return match result
                     console.log(data);
                     $("#name").html(data.people.name);
                     $("#compatability").html("Compatability: "+ data.compatibility+"%");
                     $("#profilePic").attr("src", data.people.photo);
                     $('#matchModal').modal('show');
                 }
-                else {
+                else { //return if no other people in friends.js
                     $("#name").html("Congrats, you're the first on here! Unfortuneately there's no matches for you yet.");
                     $('#matchModal').modal('show');
                 }
             });
         }
-        else {
+        else { //warning if not all questions answered
             $("#warning").html("Please fill out all fields");
             $("#warning").css({
                 "color": "red",
