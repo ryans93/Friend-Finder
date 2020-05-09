@@ -6,159 +6,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 </head>
 
 <body style="overflow-x:hidden; overflow-y:auto">
     <div class="row">
         <div class="col-xs-1"></div>
+        <!--Main Display-->
         <div class="col-xs-10">
-
             <h1><strong>Personality Questions</strong></h1>
             <h2>About You</h2>
+            <!--Questionarre Form-->
             <form>
+                <!--Input name-->
                 <div class="form-group">
                     <label for="name">Name (Required)</label>
                     <input type="name" class="form-control" id="nameInput" placeholder="">
                 </div>
+                <!--Input picture link-->
                 <div class="form-group">
                     <label for="picLink">Link to Profile Photo (Required)</label>
                     <input type="pic" class="form-control" id="link" placeholder="">
                 </div>
             </form>
 
+            <!--Questions Section-->
             <h3><strong>Question 1</strong></h3>
             <h4>You like to be the center of attention.</h4>
             <select class="custom-select" id="q1">
-            <option selected>-</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+                <option selected>-</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
 
             <h3><strong>Question 2</strong></h3>
             <h4>When you enter a room you try to avoid the center and stay on the periphery.</h4>
             <select class="custom-select" id="q2">
-            <option selected>-</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+                <option selected>-</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
 
             <h3><strong>Question 3</strong></h3>
             <h4>Being around large groups of people energizes you.</h4>
             <select class="custom-select" id="q3">
-            <option selected>-</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+                <option selected>-</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
 
             <h3><strong>Question 4</strong></h3>
             <h4>You tend to focus more on the present than considering future possibilities.</h4>
             <select class="custom-select" id="q4">
-            <option selected>-</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+                <option selected>-</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
 
             <h3><strong>Question 5</strong></h3>
             <h4>You enjoy working with abstract and theoretical concepts.</h4>
             <select class="custom-select" id="q5">
-            <option selected>-</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+                <option selected>-</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
 
             <h3><strong>Question 6</strong></h3>
             <h4>You consider yourself more practical than idealistic.</h4>
             <select class="custom-select" id="q6">
-            <option selected>-</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+                <option selected>-</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
 
             <h3><strong>Question 7</strong></h3>
             <h4>You let your head rule your heart.</h4>
             <select class="custom-select" id="q7">
-            <option selected>-</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+                <option selected>-</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
 
             <h3><strong>Question 8</strong></h3>
             <h4>Being truthful and straightfoward is important, even if someone gets their feelings hurt.</h4>
             <select class="custom-select" id="q8">
-            <option selected>-</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+                <option selected>-</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
 
             <h3><strong>Question 9</strong></h3>
             <h4>You enjoy creating schedules and executing plans.</h4>
             <select class="custom-select" id="q9">
-            <option selected>-</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+                <option selected>-</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
 
             <h3><strong>Question 10</strong></h3>
             <h4>You prefer spontaneity and freedom over routine and structure.</h4>
             <select class="custom-select" id="q10">
-            <option selected>-</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+                <option selected>-</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
             <div id="warning"></div>
-            <button type="button" class="btn btn-primary btn-lg btn-block" style="margin:20px 0 20px 0;" id="submit"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Submit</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" style="margin:20px 0 20px 0;"
+                id="submit"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Submit</button>
         </div>
     </div>
-    <div class="modal fade bs-example-modal-lg" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+
+    <!--Match Modal-->
+    <div class="modal fade bs-example-modal-lg" id="matchModal" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="row">
                     <div class="col-xs-1"></div>
+                    <!--Match Data display-->
                     <div class="col-xs-6">
-
                         <h1 class="modal-title" id="myModalLabel">Your Best Match</h1>
                         <h2 id="name"></h2>
                         <h3 id="compatability"></h3>
-
                     </div>
+                    <!--Match pic display-->
                     <div class="col-xs-4">
                         <img id=profilePic style="width: 100%; max-height:140px; margin-top:10px"></img>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,15 +175,16 @@
 </body>
 
 <script type="text/javascript">
-    $("#submit").on("click", function () { //submit button handler
-
-        //if all questions answered
+    // submit button handler
+    $("#submit").on("click", function () {
+        // check if all questions answered
         if ($("#q1 option:selected").val() != "-" && $("#q2 option:selected").val() != "-" && $("#q3 option:selected").val() != "-" &&
             $("#q4 option:selected").val() != "-" && $("#q5 option:selected").val() != "-" && $("#q6 option:selected").val() != "-" &&
             $("#q7 option:selected").val() != "-" && $("#q8 option:selected").val() != "-" && $("#q9 option:selected").val() != "-" &&
             $("#q10 option:selected").val() != "-" && $("#link").val() != "" && $("#nameInput").val() != "") {
             $("#warning").html("");
-            var friend = { //create friend object
+            // create friend object from form values
+            var friend = { 
                 name: $("#nameInput").val(),
                 photo: $("#link").val(),
                 scores: [$("#q1 option:selected").val(),
@@ -188,21 +198,25 @@
                 $("#q9 option:selected").val(),
                 $("#q10 option:selected").val()]
             }
-            $.post("/api/friends", friend, function (data) { //post friend object to friends.js
-                if (data) { //return match result
+            // post friend object to friends.js
+            $.post("/api/friends", friend, function (data) { 
+                // return match result if match is found and append html to match modal
+                if (data) { 
                     console.log(data);
                     $("#name").html(data.people.name);
-                    $("#compatability").html("Compatability: "+ data.compatibility+"%");
+                    $("#compatability").html("Compatability: " + data.compatibility + "%");
                     $("#profilePic").attr("src", data.people.photo);
                     $('#matchModal').modal('show');
                 }
-                else { //return if no other people in friends.js
-                    $("#name").html("Congrats, you're the first on here! Unfortuneately there's no matches for you yet.");
+                // return if no other people in friends.js
+                else { 
+                    $("#name").html("Congrats, you're the first to complete the survey! Unfortuneately there's no matches for you quite yet.");
                     $('#matchModal').modal('show');
                 }
             });
         }
-        else { //warning if not all questions answered
+        // warning if not all questions answered
+        else { 
             $("#warning").html("Please fill out all fields");
             $("#warning").css({
                 "color": "red",
@@ -212,6 +226,4 @@
     });
 
 </script>
-
-
 </html>
