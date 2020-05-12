@@ -7,6 +7,8 @@ A friend-finding app that has users take a Myers-Briggs inspired survey. Respons
 ![survey](/screenshots/survey.png)
 ![survey](/screenshots/match.png)
 
+[Live Demo](https://ryan-strickler-friend-finder.herokuapp.com/)
+
 ### Technologies Used
 
 - HTML5
